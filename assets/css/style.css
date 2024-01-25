@@ -218,6 +218,26 @@ h3{
 }
 /* endregion section partner dropbox */
 
+/* region section multitasking dropbox */
+.container-card-small{
+    margin-top: 70px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card-small{
+    padding-bottom: 30px;
+}
+.card-small > img{
+    width:100%;
+}
+.card-small > p{
+    margin-top: 25px
+}
+.own-clients-dropbox > h2{
+    margin-bottom: 70px;
+}
+/*end region section multitasking dropbox */
+
 
 /* end region main */
 
