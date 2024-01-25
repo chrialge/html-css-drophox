@@ -44,6 +44,9 @@ body{
     width: calc((100%/12)*8);
 
 }
+.col-4-950{
+    width: calc((950px/12)*4);
+}
 .col-4{
     width: calc((100%/12)*4);
 
@@ -80,7 +83,7 @@ background-color: var(--drophbox-light);
     justify-content: flex-end;
     align-items: center;
 }
-.d-flex, ul{
+.d-flex + ul{
     align-items: center;
 }
 .btn{
@@ -117,16 +120,26 @@ h1{
     width: 100%;
     margin-bottom: -100px;
 }
+
 /* region main principal */
 
 /* region section business */
+.separatore{
+    color: gray;
+    padding-top: 10px;
+}
 h2{
     margin-top: 150px ;
     font-size: 40px;
 }
 .business-plane-radio{
-    margin-top: 50px;
+    margin: 50px 0;
     gap: 2rem;
+}
+.continer-card-info{
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 50px;
 }
 .card{
     border: 1px solid gray;
@@ -135,22 +148,75 @@ h2{
 .card-header{
     border: 1px solid gray;  
     text-align: center;  
+    padding: 10px;
 }
 .card-body-info{
     padding: 30px;
 }
 .card-body-info > *{
-    display: block;
+    padding-bottom: 10px;
+    gap: 0.5rem;
 }
 h3{
     font-size: 25px;
 }
+.price{
+    display: block;
+}
 .price-on-month{
     color: gray;
 }
+.number-user-info{
+    margin-top: 10px;
+}
 
-
+.btn-trial-for-30gg{
+    margin: 30px 0;
+    padding: 1rem 2rem;
+}
+.card-footer{
+    padding: 0 30px 30px;
+}
+.card-footer > *{
+    gap: 0.5rem;
+    padding-bottom: 10px;
+}
+.point-of-the-plane > i{
+    color: var(--drophox-btn);
+}
+.btn-contact > button{
+    margin-bottom: 130px;
+    padding: 0.5rem 2rem;
+}
+.btn-contact{
+    justify-content: flex-end;
+}
+#settled-card-contact{
+    display: block;
+    padding: 20px 0 50px;
+}
 /* region section business */
+
+/* region section partner dropbox */
+.partner-dropbox{
+    width: 100%;
+    padding: 100px 0;
+}
+.image-partner > img{
+    width: 100%;
+}
+.text-partner{
+    padding: 50px 0 0 50px;
+}
+.text-partner > p {
+    margin: 15px 0;
+}
+.btn-shadow{
+    font-size: 20px;
+    border: 1px solid;
+    padding: 1rem;
+}
+/* endregion section partner dropbox */
 
 
 /* end region main */
