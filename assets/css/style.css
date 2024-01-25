@@ -17,12 +17,13 @@ body{
     font-family: 'Open Sans', sans-serif;
     color: var(--drophox-dark);
     background-color: green;
+    overflow-x: hidden;
 }
 /* end region common */
 
 /* region utilies */
 .container-big{
-    max-width: 1900px;
+    max-width: 1850px;
     margin: auto;
 }
 .container-medium{
@@ -97,6 +98,7 @@ background-color: var(--drophbox-light);
 /* region main principal */
 .main-principal{
     background-color: var(--drophox-background-azzure);
+    width: 100vw;
 }
 h1{
     font-size: 80px;
@@ -125,6 +127,26 @@ h2{
 .business-plane-radio{
     margin-top: 50px;
     gap: 2rem;
+}
+.card{
+    border: 1px solid gray;
+    
+}
+.card-header{
+    border: 1px solid gray;  
+    text-align: center;  
+}
+.card-body-info{
+    padding: 30px;
+}
+.card-body-info > *{
+    display: block;
+}
+h3{
+    font-size: 25px;
+}
+.price-on-month{
+    color: gray;
 }
 
 
