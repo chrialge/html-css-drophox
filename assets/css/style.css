@@ -6,6 +6,15 @@
     --drophox-btn: #0061ff;
     --drophox-background-azzure: #b4d0e7;
     --drophox-text-important: #835971;
+    --dropbox-designit: #a2d39b;
+    --dropbox-florida-university: #0093ce;
+    --dropbox-arizona-university: #61082b;
+    --dropbox-toops: #ff1c1c;
+    --dropbox-world-bicycle-relief: #d5001f;
+    --dropbox-loney-planet: #0d2481;
+    --dropbox-hearst-corporation: #b4d0e7;
+    --dropbox-clear-channel-outdoor: #ffd830;
+    --dropbox-backgroun-designit: #f5f5f5;
 }
 *{
     margin: 0;
@@ -16,7 +25,7 @@
 body{
     font-family: 'Open Sans', sans-serif;
     color: var(--drophox-dark);
-    background-color: green;
+    background-color: var(--drophbox-light);
     overflow-x: hidden;
 }
 /* end region common */
@@ -141,10 +150,7 @@ h2{
     width: 100%;
     margin-bottom: 50px;
 }
-.card{
-    border: 1px solid gray;
-    
-}
+
 .card-header{
     border: 1px solid gray;  
     text-align: center;  
@@ -152,6 +158,7 @@ h2{
 }
 .card-body-info{
     padding: 30px;
+    border: 1px solid gray;
 }
 .card-body-info > *{
     padding-bottom: 10px;
@@ -175,7 +182,7 @@ h3{
     padding: 1rem 2rem;
 }
 .card-footer{
-    padding: 0 30px 30px;
+    padding-top: 50px;
 }
 .card-footer > *{
     gap: 0.5rem;
@@ -215,6 +222,7 @@ h3{
     font-size: 20px;
     border: 1px solid;
     padding: 1rem;
+    background-color: var(--drophbox-light);
 }
 /* endregion section partner dropbox */
 
@@ -238,8 +246,142 @@ h3{
 }
 /*end region section multitasking dropbox */
 
+/* region section partnership dropbox */
+.partnership-dropbox{
+    margin-top: 200px;
+    width: 100vw;
+
+}
+.left-container-partnership{
+    flex-wrap: wrap;
+}
+.square{
+    width: calc((100%/12)*6);
+    height: 320px;
+    justify-content: center;
+    align-items: center;
+}
+.posi-abso > img{
+    width:200px;
+    fill: #FFFFFF;
+}
+.left-container-partnership :first-child{
+    background-color: var(--dropbox-designit);
+}
+.left-container-partnership :nth-last-child(3){
+    background-color: var(--dropbox-arizona-university);
+}
+.left-container-partnership :nth-last-child(2){
+    background-color: var(--dropbox-florida-university);
+}
+.left-container-partnership :last-child{
+    background-color: var(--dropbox-toops);
+}
+.center-container-partnership{
+    background-color: var(--dropbox-backgroun-designit);
+}
+
+.right-container-partnership{
+    flex-wrap: wrap;
+}
+.right-container-partnership :first-child{
+    background-color: var(--dropbox-world-bicycle-relief);
+}
+.right-container-partnership :nth-last-child(3){
+    background-color: var(--dropbox-hearst-corporation);
+}
+.right-container-partnership :nth-last-child(2){
+    background-color: var(--dropbox-loney-planet);
+}
+.right-container-partnership :last-child{
+    background-color: var(--dropbox-clear-channel-outdoor);
+}
+.posi-relative{
+    position: relative;
+}
+.posi-abso{
+    position: absolute;
+}
+/* endregion section partnership dropbox */
+
+/* section banner dropbox */
+.banner-dropbox{
+    width: 100vw;
+    background-color: var(--drophox-background-azzure);
+}
+.banner-container{
+    padding: 100px 0;
+}
+.col{
+    width: calc((100%/12)*6);
+}
+.right > h2{
+    margin: 0;
+    color: var(--drophox-text-important);
+    margin-top: -10px;
+}
+.left-banner{
+    text-align: center;
+}
+.btn-banner{
+    font-size: 15px;
+    padding: 0.5rem 2rem;
+    border: none;
+}
+/* endsection banner dropbox */
+
+/* region section frequent question dropbox */
+.frequent-question-dropbox{
+    padding-bottom: 100px;
+}
+.frequent-question-dropbox >h2{
+    margin-bottom: 80px;
+}
+.question{
+    
+    border-top: 1px solid;
+    padding: 30px 0;
+}
+.icon-question{
+    text-align: end;
+    padding-right: 50px;
+}
+/* region section frequent question dropbox */
 
 /* end region main */
 
 /* region footer */
+
+/* region top footer */
+#site-footer{
+    padding: 100px 0 50px;
+    width: 100vw;
+    background-color: var(--drophox-dark); 
+    color: var(--drophbox-light);
+}
+.top-footer{
+    margin: 80px 0;
+}
+.footer-discord > h4{
+    font-size: 25px;
+    padding-bottom: 30px;
+}
+.list-footer{
+    color: var(--drophbox-light);
+    line-height: 40px;
+}
+/* endregion top footer */
+
+.separatore{
+    color: gray;
+    font-size: 25px;
+}
+
+.bottom-footer{
+    padding-top: 70px;
+}
+.bottom-footer > i{
+    padding-right: 5px;
+}
+
 /* end region footer */
