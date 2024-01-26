@@ -58,7 +58,7 @@ body{
     width: calc((950px/12)*4);
 }
 .col-4{
-    width: calc((100%/12)*4);
+    width: calc((100%/12)*4 - 20px);
 
 }
 li>a{
@@ -71,6 +71,11 @@ ul>li{
 
 ul>li{
     list-style: none;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
 }
 /* end region utilies */
 
@@ -127,7 +132,7 @@ background-color: var(--drophbox-light);
     background-color: var(--drophbox-light);
     padding:30px ;
     background-color: var(--dropbox-menu-dropdown);
-    display: none;
+    visibility: hidden;
 }
 .posi-rela > li{
     padding: 30px;
@@ -137,15 +142,16 @@ background-color: var(--drophbox-light);
     background-color: var(--dropbox-menu-dropdown);
     transition: 0.5S;
 }
-.posi-rela .height:hover .posi-abso{
-    display: block;
+.height:hover .posi-abso{
+    visibility: visible;
+    z-index: 79;
 }
 /* end region header */
 
 /* region main */
 
 /* region main principal */
-.main-principal{
+#main-principal{
     background-color: var(--drophox-background-azzure);
     width: 100vw;
 }
@@ -156,15 +162,12 @@ h1{
 }
 .info-use > *{
     display: block;
-    margin: 35px 0;
+    margin: 25px 0;
 }
 #circle-hover:hover{
     transition: 0.5s;
     background-color: var(--drophbox-light);
     border-radius: 50%;
-}
-#circle-hover:active{
-    overflow-y: 0%;
 }
 a > i{
     margin: 50px 0 0;
@@ -253,6 +256,12 @@ h3{
 #settled-card-contact{
     display: block;
     padding: 20px 0 50px;
+}
+.btn-contact > a{
+    height: 35px
+}
+.info-use > .btn{
+    display: inline-block;
 }
 /* region section business */
 
@@ -371,7 +380,7 @@ h3{
 /* endregion section partnership dropbox */
 
 /* section banner dropbox */
-.banner-dropbox{
+#banner-dropbox{
     width: 100vw;
     background-color: var(--drophox-background-azzure);
 }
@@ -393,10 +402,18 @@ h3{
     font-size: 15px;
     padding: 0.5rem 2rem;
     border: none;
+    background-color: white;
 }
 /* endsection banner dropbox */
 
 /* region section frequent question dropbox */
+input[type="text"]{
+    margin-top: 50px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    display: none;
+}
 .frequent-question-dropbox{
     padding-bottom: 100px;
 }
@@ -412,7 +429,23 @@ h3{
     text-align: end;
     padding-right: 50px;
 }
-/* region section frequent question dropbox */
+.hover-question{
+    padding: 1rem 0.5rem;
+   
+    border-radius: 50%;
+}
+.icon-question > a > i{
+    margin: 0;
+    font-size: 16px;
+}
+.hover-question:hover{
+    background-color: #0061ff;
+    transition: 0.5s;
+}
+.hover-question:active input[type="text"]{
+    display: flex;
+}
+/* endregion section frequent question dropbox */
 
 /* end region main */
 
