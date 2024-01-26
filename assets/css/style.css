@@ -152,13 +152,12 @@ h2{
 }
 
 .card-header{
-    border: 1px solid gray;  
+    border-bottom: 1px solid gray;  
     text-align: center;  
     padding: 10px;
 }
 .card-body-info{
     padding: 30px;
-    border: 1px solid gray;
 }
 .card-body-info > *{
     padding-bottom: 10px;
@@ -181,8 +180,11 @@ h3{
     margin: 30px 0;
     padding: 1rem 2rem;
 }
+.card{
+    border: 1px solid gray;
+}
 .card-footer{
-    padding-top: 50px;
+    padding: 0 30px 30px;
 }
 .card-footer > *{
     gap: 0.5rem;
@@ -261,10 +263,13 @@ h3{
     justify-content: center;
     align-items: center;
 }
-.posi-abso > img{
-    width:200px;
-    fill: #FFFFFF;
+.width-image{
+    width: 100%;
 }
+.width-image > img{
+    width: 200px;
+}
+
 .left-container-partnership :first-child{
     background-color: var(--dropbox-designit);
 }
@@ -383,5 +388,4 @@ h3{
 .bottom-footer > i{
     padding-right: 5px;
 }
-
 /* end region footer */
