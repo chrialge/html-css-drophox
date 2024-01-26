@@ -15,6 +15,7 @@
     --dropbox-hearst-corporation: #b4d0e7;
     --dropbox-clear-channel-outdoor: #ffd830;
     --dropbox-backgroun-designit: #f5f5f5;
+    --dropbox-menu-dropdown: #dfdcd7;
 }
 *{
     margin: 0;
@@ -102,7 +103,25 @@ background-color: var(--drophbox-light);
     font-weight: 700;
     border: none;
 }
-
+.posi-rela{
+    position: relative;
+}
+.posi-abso{
+    position: absolute;
+    top: 50px;
+    line-height: 30px;
+    background-color: var(--drophbox-light);
+    padding:20px ;
+    margin-left: -20px;
+    background-color: var(--dropbox-menu-dropdown);
+}
+.height{
+    display: block;
+}
+.settled{
+    padding: 20px;
+    height: 100%;
+}
 /* end region header */
 
 /* region main */
@@ -121,9 +140,20 @@ h1{
     display: block;
     margin: 35px 0;
 }
-.info-use > i{
-    margin: 80px 0 10px;
+#circle-hover:hover{
+    transition: 0.5s;
+    background-color: var(--drophbox-light);
+    border-radius: 50%;
+}
+#circle-hover:active{
+    overflow-y: 0%;
+}
+a > i{
+    margin: 50px 0 0;
     font-size: 50px;
+    display: inline-block;
+    padding:  5px 10px;
+    color: #000000;
 }
 .info-use-image > img{
     width: 100%;
@@ -183,6 +213,7 @@ h3{
 }
 .card{
     border: 1px solid gray;
+    box-shadow: 1px 1px 1px 1px;
 }
 .card-footer{
     padding: 0 30px 30px;
