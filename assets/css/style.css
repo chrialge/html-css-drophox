@@ -127,7 +127,8 @@ h1{
 }
 .info-use-image > img{
     width: 100%;
-    margin-bottom: -100px;
+    transform: translateY(40px);
+    margin-bottom: -40px;
 }
 
 /* region main principal */
@@ -270,8 +271,7 @@ h3{
 }
 .width-image > img{
     width: 100%;
-    fill: white;
-    filter: grayscale(100%);
+    filter: invert(100%);
 }
 .width-image-2{
     width: 75%;
