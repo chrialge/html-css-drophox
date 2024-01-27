@@ -125,26 +125,42 @@ background-color: var(--drophbox-light);
     height: 100%;
     
 }
+.posi-rela > li{
+    padding:30px;
+    cursor: pointer;
+}
 .posi-abso{
     position: absolute;
     top: 80px;
+    left: 0;
+
+}
+.container-dropdown{
     line-height: 30px;
     background-color: var(--drophbox-light);
-    padding:30px ;
     background-color: var(--dropbox-menu-dropdown);
     visibility: hidden;
 }
-.posi-rela > li{
-    padding: 30px;
-    cursor: pointer;
+.container-dropdown > li{
+    padding: 0 30px;
 }
-.height:hover{
+.function-dropbox{
+    visibility: visible;
+    width: 600px;
+}
+.function-dropbox >{
+    left: 150px;
+}
+.underline-menu:hover {
     background-color: var(--dropbox-menu-dropdown);
     transition: 0.5S;
+
 }
-.height:hover .posi-abso{
+.underline-why-dropbox:hover .why-dropbox{
     visibility: visible;
-    z-index: 79;
+}
+.container-dropdown > li:hover{
+    background-color: white;
 }
 /* end region header */
 
@@ -168,6 +184,10 @@ h1{
     transition: 0.5s;
     background-color: var(--drophbox-light);
     border-radius: 50%;
+    scroll-snap-type:y -100px;
+}
+#circle-hover:active body{
+    scroll-margin-bottom: 0;
 }
 a > i{
     margin: 50px 0 0;
@@ -407,13 +427,6 @@ h3{
 /* endsection banner dropbox */
 
 /* region section frequent question dropbox */
-input[type="text"]{
-    margin-top: 50px;
-    width: 100%;
-    padding: 10px;
-    border-radius: 10px;
-    display: none;
-}
 .frequent-question-dropbox{
     padding-bottom: 100px;
 }
@@ -442,8 +455,9 @@ input[type="text"]{
     background-color: #0061ff;
     transition: 0.5s;
 }
-.hover-question:active input[type="text"]{
-    display: flex;
+details{
+    display: inline-block;
+    
 }
 /* endregion section frequent question dropbox */
 
