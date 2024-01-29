@@ -1,0 +1,175 @@
+/* region common */
+:root{
+    --dropbox-dark: #000000;
+    --dropbox-light: #dfdddb;
+    --dropbox-lighter: #ffffff;
+    --dropbox-primaery: #0567ff;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+
+}
+/* endregion common */
+/* region utilies */
+
+.d-flex{
+    display: flex;
+}
+.col-8{
+    width: calc((100%/12)*8);
+}
+.col-6{
+    width: calc((100%/12)*6);
+}                     
+.grow-1{
+    flex-grow: 1;
+}                               
+/* endregion utilies */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* region header */
+.site-header{
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+}
+.header-left >img{
+    width: 50px;
+}
+.header-right{
+    margin-right: 50px;
+    justify-content: flex-end;
+}
+.header-right > ul >li{
+    padding: 15px;
+    list-style: none;
+}
+/* endregion header */
+ 
+/* region main */
+.container{
+    height: 100vh;
+    font-size: 15px;
+}
+
+/* region main left */
+.main-left{
+    padding-top: 150px;
+    background-color: var(--dropbox-lighter);
+    justify-content: center;
+    margin: auto;
+}
+.header-info-trial{
+    margin-bottom: 60px;
+}
+h1{
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    line-height: 50px;
+}
+h2{
+    font-weight: 500;
+    margin: 10px 0;
+}
+.buy-dropbox{
+    color: var(--dropbox-dark);
+}
+.buy-dropbox:hover{
+    text-decoration: none;
+}
+.info-plane{
+    margin-bottom: 30px;
+}
+.info-plane > span{
+    display: block;
+    margin-left: 18px;
+    line-height: 25px;
+}
+.text-light{
+    color: gray;
+}
+form{
+    margin: 20px 0;
+    width: 100%;
+}
+.container-label{
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width: 46%;
+}
+.container-label > label{
+    display: block;
+    margin-bottom: 5px;
+}
+.container-label > input{
+    width: 100%;
+    font-size: 15px;
+    height: 55px;
+}
+.password-label{
+    position: relative;
+}
+.elips-vertical{
+    top:30px;
+    right: 7px;
+    font-size: 35px;
+    z-index: 2;
+    position: absolute;
+}
+.email-label{
+    width: 100%;
+    padding-right: 23px;
+}
+.email-label > input{
+    width: 100%;
+    margin-right: 80px;
+}
+.register-with-google{
+    width: 70%;
+    border: 1px solid gray;
+    padding: 5px;
+    align-items: center;
+}
+.register-with-google > img{
+    max-width: 30px;
+    background-color: var(--dropbox-light);
+}
+.text-google{
+    justify-content: center;
+}
+.create-account{
+    padding-bottom: 50px;
+    border-bottom: 1px solid gray;
+}
+/* endregion main left */
+/* region right */
+.main-right{
+    padding-top: 150px;
+    padding-left: 50px;
+    background-color: var(--dropbox-light);
+
+}
+/* endregion right */
+
+
+/* endregion main */
