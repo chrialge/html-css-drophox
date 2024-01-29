@@ -81,9 +81,13 @@ a{
 
 /* region header */
 #site-header{
-width: 100vw;
-height: 80px;
-background-color: var(--drophbox-light);
+    width: 100vw;
+    height: 80px;
+    background-color: var(--drophbox-light);
+    position: fixed;
+    border-bottom: 1px solid gray;
+    z-index: 3;
+    top: 0;
 }
 .siderbar{
     align-items: center;
@@ -186,6 +190,7 @@ background-color: var(--drophbox-light);
 #main-principal{
     background-color: var(--drophox-background-azzure);
     width: 100vw;
+    margin-top: 40px;
 }
 h1{
     font-size: 80px;
@@ -212,10 +217,13 @@ a > i{
     padding:  5px 10px;
     color: #000000;
 }
+.info-use-image{
+    width: calc((100%/12)*8);
+    display: flex;
+    transform: translateY(30px);
+}
 .info-use-image > img{
     width: 100%;
-    transform: translateY(40px);
-    margin-bottom: -40px;
 }
 
 /* region main principal */
@@ -316,6 +324,7 @@ h3{
     margin: 15px 0;
 }
 .btn-shadow{
+    color: var(--drophox-dark);
     font-size: 20px;
     border: 1px solid;
     padding: 1rem;
@@ -353,12 +362,11 @@ h3{
     flex-wrap: wrap;
 }
 .square{
-    width: 300px;
-    height: 300px;
     justify-content: center;
     align-items: center;
     padding: 70px;
-
+    width: calc(100%/2);
+    height: 320px;
 }
 .width-image{
     width: 100%;
@@ -435,6 +443,7 @@ h3{
     text-align: center;
 }
 .btn-banner{
+    color: var(--drophox-dark);
     font-size: 15px;
     padding: 0.5rem 2rem;
     border: none;
