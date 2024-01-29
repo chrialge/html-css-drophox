@@ -20,6 +20,8 @@
             <div class="left grow-1 d-flex">
                 <img src="./assets/img/logo-small.png" alt="">
                 <ul class="d-flex posi-rela">
+
+                    <!-- why-dropbox -->
                     <li  class="underline-menu underline-why-dropbox d-flex"><a href="#">Perche Dropbox</a>
                         <ul class="posi-abso container-dropdown why-dropbox">
                             <li><a href="#">Perche Dropbox</a></li>
@@ -28,35 +30,55 @@
                             <li><a href="#"></a></li>
                         </ul>
                     </li>
-                    <li class="d-flex posi-rela underline-menu underline-function-dropbox"><a href="#">Funzioni</a>
-                        <ul class="posi-abso container-dropdown function-dropbox team">
-                            <li><strong>Team</strong></li>
-                            <li><a href="#">Vendite</a></li>
-                            <li><a href="#">Marketing</a></li>
-                            <li><a href="#">Risorse umane</a></li>
-                            <li><a href="#">IT</a></li>
-                            <li><a href="#">Creativi</a></li>
-                            <li><a href="#"></a></li>
-                        </ul>
-                        <ul class="posi-abso container-dropdown function-dropbox use-case ">
-                            <li><strong>Caso d'uso</strong></li>
-                            <li><a href="#">Spazio di archiviazione</a></li>
-                            <li><a href="#">Revisione video</a></li>
-                            <li><a href="#">Firmare documenti</a></li>
-                            <li><a href="#">Inviare file</a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                        </ul>
-                        <ul class="posi-abso container-dropdown function-dropbox sector">
-                            <li><strong>Settore</strong></li>
-                            <li><a href="#">Edilizia</a></li>
-                            <li><a href="#">Tecnologia</a></li>
-                            <li><a href="#">Settore manifatturiero</a></li>
-                            <li><a href="#">Mass media</a></li>
-                            <li><a href="#">Servizi professionali</a></li>
-                            <li><a href="#">Istituzione</a></li>
-                        </ul>
+                    <!-- why-dropbox -->
+
+                    <!-- function-dropbox -->
+                    <li class="posi-rela underline-menu underline-function-dropbox"><a  href="#">Funzioni</a>
+
+                        <div class="container-function d-flex">
+                                
+                            <!-- team -->
+                            <ul class="function-dropbox grow-1 team">
+                                <li><strong>Team</strong></li>
+                                <li><a href="#">Vendite</a></li>
+                                <li><a href="#">Marketing</a></li>
+                                <li><a href="#">Risorse umane</a></li>
+                                <li><a href="#">IT</a></li>
+                                <li><a href="#">Creativi</a></li>
+                                <li></li>
+                            </ul>
+                            <!-- team -->
+
+                            <!-- use-case -->
+                            <ul class="function-dropbox grow-1 use-case ">
+                                <li><strong>Caso d'uso</strong></li>
+                                <li><a href="#">Spazio di archiviazione</a></li>
+                                <li><a href="#">Revisione video</a></li>
+                                <li><a href="#">Firmare documenti</a></li>
+                                <li><a href="#">Inviare file</a></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                            <!-- use-case -->
+
+                            <!-- sector -->
+                            <ul class="function-dropbox grow-1 sector">
+                                <li><strong>Settore</strong></li>
+                                <li><a href="#">Edilizia</a></li>
+                                <li><a href="#">Tecnologia</a></li>
+                                <li><a href="#">Settore manifatturiero</a></li>
+                                <li><a href="#">Mass media</a></li>
+                                <li><a href="#">Servizi professionali</a></li>
+                                <li><a href="#">Istituzione</a></li>
+                            </ul>
+                            <!-- sector -->
+
+                        </div>
+
+                       
                     </li>
+                    <!-- function-dropbox -->
+
                     <li class="underline-menu"><a href="#">Piani e Prezzi</a></li>
                 </ul>
             </div>
@@ -409,7 +431,9 @@
                 <!-- own clients dropbox -->
                 <div class="col-8 own-clients-dropbox">
                     <h2>Piu di 500.000 team utilizzano Dropbox Business</h2>
-                    <a href="#">Scopri di piu sui nostri clienti</a>
+                    <div class="text-important">
+                        <a href="#">Scopri di piu sui nostri clienti</a>
+                    </div>
                 </div>
                 <!-- /own clients dropbox -->
 
@@ -498,33 +522,57 @@
 
             <!-- first question -->
             <div class="question d-flex">
-                <span>Qual e la differenza tra Dropbox Business Standard e ropbox Business Advanced</span>
-                <details>
-                    <summary class="fa-solid fa-chevron-down d-flex"></summary>
-                    <p>Standard offre ai team 5000 GB di spazio di archiviazione con strumenti di sicurezza, condivisione e collaborazione facili da usare. Advanced parte da 15 TB di spazio di archiviazione per team, oltre a solidi controlli di sicurezza e avvisi.</p>
-                </details>
+                <span>Qual e la differenza tra Dropbox Business Standard e ropbox Business Advanced ?</span>
+                <div class="chevron open-accordion">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="chevron close-accordion">
+                    <i  class="fa-solid fa-chevron-up"></i>
+                </div>
+                <div class="answer">
+                    <p>
+                        Standard offre ai team 5000 GB di spazio di archiviazione con strumenti di sicurezza, condivisione e collaborazione facili da usare.
+                         Advanced parte da 15 TB di spazio di archiviazione per team, oltre a solidi controlli di sicurezza e avvisi.
+                    </p>
+                </div>
+
             </div>
             <!-- /first question -->
             
             <!-- second question -->
             <div class="question d-flex">
-                <div class="text-question col-8">
-                    <span>Qual e la differenza tra Dropbox Business Standard e ropbox Business Advanced</span>
-                </div>
-                <div class="icon-question col-4">
+                <span>Qual e la differenza tra Dropbox Business Standard e ropbox Business Advanced ?</span>
+                <div class="chevron open-accordion">
                     <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="chevron close-accordion">
+                    <i  class="fa-solid fa-chevron-up"></i>
+                </div>
+                <div class="answer">
+                    <p>
+                        Standard offre ai team 5000 GB di spazio di archiviazione con strumenti di sicurezza, condivisione e collaborazione facili da usare.
+                         Advanced parte da 15 TB di spazio di archiviazione per team, oltre a solidi controlli di sicurezza e avvisi.
+                    </p>
                 </div>
             </div>
             <!-- /second question -->
 
             <!-- third question -->
             <div class="question d-flex">
-                <div class="text-question col-8">
-                    <span>Qual e la differenza tra Dropbox Business Standard e ropbox Business Advanced</span>
-                </div>
-                <div class="icon-question col-4">
+                <span>Qual e la differenza tra Dropbox Business Standard e ropbox Business Advanced ?</span>
+                <div class="chevron open-accordion">
                     <i class="fa-solid fa-chevron-down"></i>
                 </div>
+                <div class="chevron close-accordion">
+                    <i  class="fa-solid fa-chevron-up"></i>
+                </div>
+                <div class="answer">
+                    <p>
+                        Standard offre ai team 5000 GB di spazio di archiviazione con strumenti di sicurezza, condivisione e collaborazione facili da usare.
+                         Advanced parte da 15 TB di spazio di archiviazione per team, oltre a solidi controlli di sicurezza e avvisi.
+                    </p>
+                </div>
+
             </div>
             <!-- third question -->
 
