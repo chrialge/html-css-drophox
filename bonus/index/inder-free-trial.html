@@ -23,8 +23,8 @@
         </div>
         <div class="header-right grow-1 d-flex">
             <ul class="d-flex">
-                <li>Contatta l'ufficio vendite</li>
-                <li>Accedi</li>
+                <li><a href="#">Contatta l'ufficio vendite</a></li>
+                <li><a href="#">Accedi</a></li>
             </ul>
         </div>
 
@@ -38,7 +38,7 @@
                     <!-- header info trial-->
                     <div class="header-info-trial">
                         <h1>Inizia la prova gratuita</h1>
-                        <span>Oppure <a class="buy-dropbox" href="#">
+                        <span>Oppure <a class="buy-dropbox none-decoration" href="#">
                             <strong>acquista subito dropbox Business</strong></a>
                         </span>
                     </div>
@@ -64,7 +64,7 @@
                     <!-- section create account -->
                     <section class="create-account">
                         <h2>Crea un account</h2>
-                        <span>Oppure <a href="#" class="buy-dropbox">usa un account Dropbox esistente</a></span>
+                        <span>Oppure <a href="#" class="buy-dropbox none-decoration">usa un account Dropbox esistente</a></span>
                         <form action="page-data">
                             <div class="container-label">
                                 <label for="f-name">Nome</label>
@@ -101,23 +101,120 @@
                     <!-- section plene for trial -->
 
                     <!-- section policy info -->
-                    <div class="policy">
+                    <div id="policy">
                         <p>
                             Se hai un account Dropbox Sign, puoi gestire le impostazioni su Dropbox.com.
-                            Non puoi eliminare l'account durante il periodo di validita del paino
+                            Non puoi eliminare l'account durante il periodo di validita del piano.
                         </p>
+                        <p>
+                            Selezionando "Inizia la prova gratuita" accetto il <a href="https://www.dropbox.com/business_agreement" class="none-decoration">Contratto sui servizi</a> e i <a href="https://www.dropbox.com/terms" class="none-decoration">Termini</a> .
+                            Scopri come utilizziamo e proteggiamo i tuoi dati nellle <a class="none-decoration" href="https://www.dropbox.com/privacy">Norme sulla privacy di Dropbox</a>
+                        </p>
+
+                        <!-- checkbox newsletter -->
+                        <div class="newsletter d-flex">
+                            <input type="checkbox" value="newsletter" name="newsletter">
+                            <span>Voglio ricevere aggiornamenti di marketing diretto via email da Dropbox</span>
+                        </div>
+                        <!-- checkbox newsletter -->
+
+                        <span>Carta di creditto non necessaria</span>
+
+                        <!-- btn-trial -->
+                        <div class="start-btn-trial">
+                            <i class="fa-solid fa-lock"></i>
+                            <span>Accetta e inizia la prova gratuita</span>
+                        </div>
+                        <!-- /btn trial -->
+
+                        <div class="credential-dropbox">
+                            <span>Dropbox Internatinal Unlimited Company</span>
+                            <span>One Park Place / Hatch Street Upper / Dublin 2 / Ireland</span>
+                        </div>
+
                     </div>
+                    <!-- /section policy info -->
+
+                    <footer id="site-footer">
+                        <span>
+                            <a href="https://www.dropbox.com/privacy">
+                            Termini e privacy
+                            </a>
+                        </span>
+                        <span>
+                            <strong>Italiano</strong>
+                        </span>
+                    </footer>
+                    <!-- /#site-footer -->
                 </div>
             </div>
+
+            <!-- main-right -->
             <div class="main-right col-6 grow-1">
-                <div class="col-8"></div>
+                <div class="col-8">
+                    <section id="summary">
+                        <h2>Riepilogo</h2>
+                        <div class="header-summary d-flex">
+                            <div class="left-header grow-1 d-flex">
+                                <img src="../assets/img/dropbox.png" alt="">
+                                <span>Dropbox Business Plus</span>
+                            </div>
+                            <div class="right-header grow-1">
+                                <span>GRATIS</span>
+                            </div>
+                        </div>
+                        <div class="container-with-summary">
+                            <div class="point-summary">
+                                <i class="fa-solid fa-check"></i>
+                                <span>Invia file di grandi dimensioni fino a 250 GB</span> 
+                            </div>
+                            <div class="point-summary">
+                                <i class="fa-solid fa-check"></i>
+                                <span>1 anno per ripristinare i file eliminati</span> 
+                            </div>
+                            <div class="point-summary">
+                                <i class="fa-solid fa-check"></i>
+                                <span>Monitora le visite e le interazioni con i file</span> 
+                            </div>
+                            <div class="point-summary">
+                                <i class="fa-solid fa-check"></i>
+                                <span>Richieste di firma illimitate</span> 
+                            </div>
+                            <div class="point-summary">
+                                <i class="fa-solid fa-check"></i>
+                                <span>Modifica di PDF</span> 
+                            </div>
+                            <div class="point-summary">
+                                <i class="fa-solid fa-check"></i>
+                                <span>Registra, rivedi e modifica i video</span> 
+                            </div>
+                            <div class="point-summary">
+                                <i class="fa-solid fa-check"></i>
+                                <span>Configura ruoli con livelli di amministrazione</span> 
+                            </div>
+                            <div class="point-summary">
+                                <i class="fa-solid fa-check"></i>
+                                <span>Avvisi di attività sospette</span> 
+                            </div>
+                            <div class="point-summary">
+                                <i class="fa-solid fa-check"></i>
+                                <span>Monitoraggio conformità</span> 
+                            </div>
+                            <div class="point-summary">
+                                <i class="fa-solid fa-check"></i>
+                                <span>E altri strumenti per il tuo team</span> 
+                            </div>
+
+                        </div>
+                    </section>
+                </div>
             </div>
+            <!-- main right -->
 
         </div>
     </main>
     <!-- /#site-main -->
-    <footer id="site-footer"></footer>
-    <!-- /#site-footer -->
+
 </body>
 
 </html>
