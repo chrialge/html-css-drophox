@@ -17,7 +17,9 @@ body{
 }
 /* endregion common */
 /* region utilies */
-
+.posi-rela{
+    position: relative;
+}
 .d-flex{
     display: flex;
 }
@@ -57,6 +59,34 @@ body{
 .header-right > ul >li >a{
     text-decoration: none;
     color: var(--dropbox-dark);
+}
+.background-hover-header >li:hover{
+    background-color: #e2cb99;
+}
+.dropdown{
+    background-color: #e2cb99 ;
+    padding: 5px 0;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    width: 80%;
+    display: none;
+}
+.dropdown > ul > li{
+    list-style: none;
+    line-height:30px ;
+    padding-left: 20px;
+    
+}
+.dropdown > ul > li > a{
+    color: var(--dropbox-dark);
+    text-decoration: none;
+}
+.dropdown > ul > li:hover{
+    background-color: var(--dropbox-lighter);
+}
+.dropdown-btn:hover .dropdown{
+    display: block;
 }
 /* endregion header */
  
