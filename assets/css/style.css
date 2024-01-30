@@ -310,7 +310,7 @@ h3{
 /* region section business */
 
 /* region section partner dropbox */
-.partner-dropbox{
+#partner-dropbox{
     width: 100%;
     padding: 100px 0;
 }
@@ -353,7 +353,7 @@ h3{
 /*end region section multitasking dropbox */
 
 /* region section partnership dropbox */
-.partnership-dropbox{
+#partnership-dropbox{
     margin-top: 200px;
     width: 100vw;
 
@@ -452,10 +452,10 @@ h3{
 /* endsection banner dropbox */
 
 /* region section frequent question dropbox */
-.frequent-question-dropbox{
+#frequent-question-dropbox{
     padding-bottom: 100px;
 }
-.frequent-question-dropbox >h2{
+.container-small >h2{
     margin-bottom: 80px;
 }
 .question{
