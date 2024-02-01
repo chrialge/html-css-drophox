@@ -231,7 +231,8 @@ a > i{
 /* region section business */
 .separatore{
     color: gray;
-    padding-top: 10px;
+    width: 60px;
+    margin-left: 30px;
 }
 h2{
     margin-top: 150px ;
@@ -281,7 +282,7 @@ h3{
     box-shadow: 1px 1px 1px 1px;
 }
 .card-footer{
-    padding: 0 30px 30px;
+    padding: 30px 30px 30px;
 }
 .card-footer > *{
     gap: 0.5rem;
@@ -529,9 +530,9 @@ details{
 }
 /* endregion top footer */
 
-.separatore{
-    color: gray;
-    font-size: 25px;
+.separatore-footer{
+    margin: 0;
+    width: 70px;
 }
 
 .bottom-footer{
