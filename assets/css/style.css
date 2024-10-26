@@ -700,3 +700,45 @@ details {
         }
     }
 }
+
+@media (max-width: 950px) {
+    .card .col-4 {
+        width: 50%;
+    }
+
+    /* #business > div > div.continer-card-info.d-flex > div:nth-child(1) */
+    .continer-card-info {
+        gap: 20px;
+
+        &>.col-4 {
+            width: calc(50% - 10px);
+
+        }
+    }
+
+    #partner-dropbox>.container-small {
+
+        &>.col-4,
+        &>.col-8 {
+            width: 100%;
+
+        }
+
+        &>.col-4 {
+            text-align: center;
+
+            &>p {
+                margin: 25px 0;
+            }
+        }
+    }
+
+    .container-card-small {
+        gap: 20px;
+
+        &>.col-4 {
+            width: calc(50% - 10px);
+        }
+    }
+
+}

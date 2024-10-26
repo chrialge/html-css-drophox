@@ -20,7 +20,7 @@
 
     <header id="site-header">
         <div class="siderbar container-big d-flex">
-            <div class="left grow-1 d-flex">
+            <div class="left d-flex">
                 <img src="./assets/img/logo-small.png" alt="">
                 <ul class="d-flex posi-rela sidebar-left">
 
@@ -175,7 +175,7 @@
                             <i class="fa-solid fa-user fa-lg" style="margin: 0;"></i>
                         </a>
                     </li>
-                    <li><a href="#" class="btn">Inizia</a></li>
+                    <li><a href="./index/inder-free-trial.html" class="btn">Inizia</a></li>
                 </ul>
             </div>
         </div>
@@ -199,7 +199,7 @@
                             Dropbox Business e piu di uno spazio di archiviazione sicuro: e un modo intelligente e
                             integrato per ottimizzare il flusso di lavoro esistente.
                         </p>
-                        <a class="btn" href="#">Inizia la tua prova gratuita</a>
+                        <a class="btn" href="./index/inder-free-trial.html">Inizia la tua prova gratuita</a>
                         <span>Annulla in qualsiasi momento</span>
                         <a href="#"><i id="circle-hover" class="fa-solid fa-arrow-down"></i></a>
                     </div>
@@ -223,11 +223,12 @@
             <!-- checkbox-radio -->
             <div class="business-plane-radio d-flex">
                 <div class="business-plane">
-                    <input type="radio" name="" id="">
+                    <input type="radio" name="cost" id="cost-month" checked="checked" value="month"
+                        onclick="costMonth()">
                     <span>Fatturazione mensile</span>
                 </div>
                 <div class="business-plane">
-                    <input type="radio" name="" id="">
+                    <input type="radio" name="cost" id="cost-year" value="year" onclick="costYear()">
                     <span>Fatturazione annuale</span>
                 </div>
             </div>
@@ -264,7 +265,8 @@
                             <span>Funzioni di produttivita premium e condivisione file semplice e sicura</span>
                         </div>
                         <div class="trial-container d-flex">
-                            <a href="#" class="btn btn-trial-for-30gg">Prova gratis per 30 giorni</a>
+                            <a href="./index/inder-free-trial.html" class="btn btn-trial-for-30gg">Prova gratis per 30
+                                giorni</a>
                             <span>oppure <a href="#">acquista ora</a></span>
                         </div>
 
@@ -318,7 +320,8 @@
                                 team</span>
                         </div>
                         <div class="trial-container d-flex">
-                            <a href="#" class="btn btn-trial-for-30gg">Prova gratis per 30 giorni</a>
+                            <a href="./index/inder-free-trial.html" class="btn btn-trial-for-30gg">Prova gratis per 30
+                                giorni</a>
                             <span>oppure <a href="#">acquista ora</a></span>
                         </div>
                         <div class="separatore">______</div>
@@ -383,7 +386,8 @@
                                 scala</span>
                         </div>
                         <div class="trial-container d-flex">
-                            <a href="#" class="btn btn-trial-for-30gg">Prova gratis per 30 giorni</a>
+                            <a href="./index/inder-free-trial.html" class="btn btn-trial-for-30gg">Prova gratis per 30
+                                giorni</a>
                             <span>oppure <a href="#">acquista ora</a></span>
                         </div>
                         <div class="separatore">______</div>
@@ -804,6 +808,80 @@
 
     </footer>
     <!-- /#site-footer -->
+
+    <script>
+
+        function costMonth() {
+
+
+            const priceel = document.querySelectorAll('.price');
+            const typeCostEl = document.querySelectorAll('.price-on-month');
+
+            if (priceel[0].childNodes[1].textContent === '€ 144,00') {
+                priceel.forEach((element) => {
+                    const elPrice = element.childNodes[1].textContent;
+                    if (elPrice.includes(',00')) {
+
+                        const price = elPrice.split('€ ')
+                        const costYear = parseFloat(price[1]) / 12;
+                        const string = '€ ' + costYear + ',00'
+                        element.childNodes[1].textContent = string
+
+
+                    }
+                })
+
+                typeCostEl.forEach((element) => {
+                    if (element.textContent.includes('anno')) {
+
+                        const textel = element.textContent.replace('anno', 'mese')
+                        element.textContent = textel
+
+                    }
+
+
+                })
+            }
+
+
+        }
+
+
+        function costYear() {
+
+
+            const priceel = document.querySelectorAll('.price');
+            const typeCostEl = document.querySelectorAll('.price-on-month');
+
+            if (priceel[0].childNodes[1].textContent === '€ 12,00') {
+                priceel.forEach((element) => {
+                    const elPrice = element.childNodes[1].textContent;
+                    if (elPrice.includes(',00')) {
+                        const price = elPrice.split('€ ')
+                        const costYear = parseFloat(price[1]) * 12;
+                        const string = '€ ' + costYear + ',00'
+                        element.childNodes[1].textContent = string
+                    }
+                })
+
+                typeCostEl.forEach((element) => {
+                    if (element.textContent.includes('mese')) {
+
+                        const textel = element.textContent.replace('mese', 'anno')
+                        element.textContent = textel
+
+                    }
+
+
+                })
+            }
+
+
+        }
+
+
+
+    </script>
 
 </body>
 
