@@ -1,6 +1,6 @@
 # Dropbox Layout
 
-link of the site
+link of the site : `https://dropbchrialgedev.netlify.app/`
 
 <img width="957" alt="Immagine 2024-10-27 171412" src="https://github.com/user-attachments/assets/847fdf49-3f30-4f3a-b23d-3835b4a570d1">
 
