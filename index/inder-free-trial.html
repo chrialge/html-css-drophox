@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../assets/css/style-free-trial.css" />
+    <link href="https://cfl.dropboxstatic.com/static/metaserver/static/images/favicon-vfl8lUR9B.ico"
+        rel="shortcut icon">
+    <title>Dropbox</title>
+</head>
+
+<body>
+    <header class="site-header d-flex">
+        <div class="header-left grow-1 ">
+            <img src="../assets/img/dropbox.png" alt="">
+        </div>
+        <div class="header-right grow-1 d-flex">
+            <ul class="background-hover-header d-flex posi-rela">
+                <li class="dropdown-btn">
+                    <a href="#">Contatta l'ufficio vendite</a>
+                    <div class="dropdown">
+                        <ul>
+                            <li><a href="#">Email</a></li>
+                            <li><a href="#">Chat</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">Accedi</a></li>
+            </ul>
+        </div>
+        <div class="mini-menu">
+            <i class="fa fa-chevron-down" aria-hidden="true" onmouseenter="dysplayMenu()"></i>
+            <ul class="menu-1" id="menu-1" onmouseleave="closeMenu()">
+                <li class="dropdown-btn">
+                    <a href="#">Contatta l'ufficio vendite</a>
+                    <div class="dropdown">
+                        <ul>
+                            <li><a href="#">Email</a></li>
+                            <li><a href="#">Chat</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">Accedi</a></li>
+            </ul>
+        </div>
+
+    </header>
+    <!-- /#site-header -->
+    <main id="site-main">
+        <div class=" container d-flex">
+            <div class="main-left col-6 grow-1 d-flex">
+                <div class="col-8">
+
+                    <!-- header info trial-->
+                    <div class="header-info-trial">
+                        <h1>Inizia la prova gratuita</h1>
+                        <span>Oppure <a class="buy-dropbox none-decoration" href="#">
+                                <strong>acquista subito dropbox Business</strong></a>
+                        </span>
+                    </div>
+                    <!-- header info trial-->
+
+                    <!-- section plene for trial -->
+                    <section class="plane-for-free-trial">
+                        <h2>Scegli un piano di prova</h2>
+                        <div class="info-plane">
+                            <input type="radio" name="planes" id=""> Business
+                            <span class="text-light">Prova gratis per 30 giorni</span>
+                            <span>9tb (9000 GB) per il team</span>
+                        </div>
+                        <div class="info-plane">
+                            <input type="radio" name="planes" id=""> Business Plus
+                            <span class="text-light">Prova gratis per 30 giorni</span>
+                            <span>Starts at 15 TB (15000 GB) per il team</span>
+                        </div>
+
+                    </section>
+                    <!-- section plene for trial -->
+
+                    <!-- section create account -->
+                    <section class="create-account">
+                        <h2>Crea un account</h2>
+                        <span>Oppure <a href="#" class="buy-dropbox none-decoration">usa un account Dropbox
+                                esistente</a></span>
+                        <form action="page-data">
+                            <div class="container-label">
+                                <label for="f-name">Nome</label>
+                                <input type="text" name="fname">
+                            </div>
+                            <div class="container-label">
+                                <label for="f-name">Cognome</label>
+                                <input type="text" name="fname">
+                            </div>
+                            <div class="container-label">
+                                <label for="f-naEmailme">Email</label>
+                                <input type="email" name="fname">
+                            </div>
+                            <div class="container-label password-label" id="">
+                                <label for="f-name">Password</label>
+                                <input type="passwordS" name="fname">
+                                <div class="elips-vertical"><i id="posi-abso" class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+                            </div>
+                            <div class="container-label email-label">
+                                <label for="f-name">Nome del team</label>
+                                <input type="text-area" name="fname">
+                            </div>
+                        </form>
+
+                        <span>Oppure registrati con</span>
+                        <div class="register-with-google d-flex">
+                            <img class="grow-1" src="../assets/img/google-logo.jpg" alt="">
+                            <div class="text-google d-flex grow-1">
+                                <span class=""> Continua con Google</span>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- section plene for trial -->
+
+                    <!-- section policy info -->
+                    <div id="policy">
+                        <p>
+                            Se hai un account Dropbox Sign, puoi gestire le impostazioni su Dropbox.com.
+                            Non puoi eliminare l'account durante il periodo di validita del piano.
+                        </p>
+                        <p>
+                            Selezionando "Inizia la prova gratuita" accetto il <a
+                                href="https://www.dropbox.com/business_agreement" class="none-decoration">Contratto sui
+                                servizi</a> e i <a href="https://www.dropbox.com/terms"
+                                class="none-decoration">Termini</a> .
+                            Scopri come utilizziamo e proteggiamo i tuoi dati nellle <a class="none-decoration"
+                                href="https://www.dropbox.com/privacy">Norme sulla privacy di Dropbox</a>
+                        </p>
+
+                        <!-- checkbox newsletter -->
+                        <div class="newsletter d-flex">
+                            <input type="checkbox" value="newsletter" name="newsletter">
+                            <span>Voglio ricevere aggiornamenti di marketing diretto via email da Dropbox</span>
+                        </div>
+                        <!-- checkbox newsletter -->
+
+                        <span>Carta di creditto non necessaria</span>
+
+                        <div class="container_btn">
+                            <!-- btn-trial -->
+                            <div class="start-btn-trial">
+                                <i class="fa-solid fa-lock"></i>
+                                <span>Accetta e inizia la prova gratuita</span>
+                            </div>
+                            <!-- /btn trial -->
+                        </div>
+
+
+
+                        <div class="credential-dropbox">
+                            <span>Dropbox Internatinal Unlimited Company</span>
+                            <span>One Park Place / Hatch Street Upper / Dublin 2 / Ireland</span>
+                        </div>
+
+                    </div>
+                    <!-- /section policy info -->
+
+                    <footer id="site-footer">
+                        <span>
+                            <a href="https://www.dropbox.com/privacy">
+                                Termini e privacy
+                            </a>
+                        </span>
+                        <span>
+                            <strong>Italiano</strong>
+                        </span>
+                    </footer>
+                    <!-- /#site-footer -->
+                </div>
+            </div>
+
+            <!-- main-right -->
+            <div class="main-right col-6 grow-1">
+                <div class="col-8">
+                    <section id="summary">
+                        <h2>Riepilogo</h2>
+                        <div class="header-summary d-flex">
+                            <div class="left-header grow-1 d-flex">
+                                <img src="../assets/img/dropbox.png" alt="">
+                                <span>Dropbox Business Plus</span>
+                            </div>
+                            <div class="right-header grow-1">
+                                <span>GRATIS</span>
+                            </div>
+                        </div>
+                        <div class="container-with-summary">
+                            <div class="point-summary">
+                                <i class="fa-solid fa-check"></i>
+                                <span>Invia file di grandi dimensioni fino a 250 GB</span>
+                            </div>
+                            <div class="point-summary">
+                                <i class="fa-solid fa-check"></i>
+                                <span>1 anno per ripristinare i file eliminati</span>
+                            </div>
+                            <div class="point-summary">
+                                <i class="fa-solid fa-check"></i>
+                                <span>Monitora le visite e le interazioni con i file</span>
+                            </div>
+                            <div class="point-summary">
+                                <i class="fa-solid fa-check"></i>
+                                <span>Richieste di firma illimitate</span>
+                            </div>
+                            <div class="point-summary">
+                                <i class="fa-solid fa-check"></i>
+                                <span>Modifica di PDF</span>
+                            </div>
+                            <div class="point-summary">
+                                <i class="fa-solid fa-check"></i>
+                                <span>Registra, rivedi e modifica i video</span>
+                            </div>
+                            <div class="point-summary">
+                                <i class="fa-solid fa-check"></i>
+                                <span>Configura ruoli con livelli di amministrazione</span>
+                            </div>
+                            <div class="point-summary">
+                                <i class="fa-solid fa-check"></i>
+                                <span>Avvisi di attività sospette</span>
+                            </div>
+                            <div class="point-summary">
+                                <i class="fa-solid fa-check"></i>
+                                <span>Monitoraggio conformità</span>
+                            </div>
+                            <div class="point-summary">
+                                <i class="fa-solid fa-check"></i>
+                                <span>E altri strumenti per il tuo team</span>
+                            </div>
+
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <!-- main right -->
+
+        </div>
+    </main>
+    <!-- /#site-main -->
+
+
+    <script>
+
+        function dysplayMenu() {
+
+            const element = document.getElementById('menu-1');
+            element.style.display = 'flex'
+
+        }
+
+        function closeMenu() {
+
+            document.getElementById('menu-1').style.display = ""
+        }
+    </script>
+
+</body>
+
+</html>
